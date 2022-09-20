@@ -1,0 +1,28 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css';
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    background: rgb(199, 179, 245);
+}
+.header{
+    background: rgb(0, 255, 149);
+}
+
+.nav{
+    background: rgb(180, 0, 0);
+}
+
+.slider{
+    background: rgb(0, 54, 50);
+}
+
+.article{
+    background: rgb(136, 255, 0);
+}
+
+.footer{
+    background: rgb(0, 71, 204);
+}
