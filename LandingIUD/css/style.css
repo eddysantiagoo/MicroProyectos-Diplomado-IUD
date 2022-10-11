@@ -28,12 +28,24 @@ a {
 
 .header {
   grid-area: header;
-  background: rgb(1, 73, 155);
+  background: #2075a0;
+  color: #ffff;
+}
+
+.nav1{
+  padding: 10px;
+
+}
+
+.nav1 i{
+  margin-left: 15px;
 }
 
 .nav {
   grid-area: nav;
-  background: rgb(0, 110, 255);
+  background: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
 }
 
 .slider {
