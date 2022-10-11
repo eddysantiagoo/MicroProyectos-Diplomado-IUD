@@ -101,7 +101,7 @@ a {
 
 .articles{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
   width: 80%;
   margin: 0 auto;
@@ -128,8 +128,33 @@ a {
   padding-right: 15px;
 }
 
+.article img{
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0.9;
+  transition: opacity 2s ease-in-out;
+  transition: transform 2s;
+
+ 
+}
+
+.article img:hover{
+  transform:scale(1.1);
+  opacity: 1;
+}
+
+.article .img{
+  overflow: hidden;
+}
 
 .footer {
   grid-area: footer;
   background: rgb(0, 71, 204);
+}
+
+.foot{
+  color: #fff;
+  text-align: center;
+  height: auto;
+  padding-left: 10px;
 }
