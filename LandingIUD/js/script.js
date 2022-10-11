@@ -1,4 +1,5 @@
 const foot = document.getElemntByUd('year');
 
+const year = new Date().getFullYear
 
-foot.i
+foot.innerHTML = year;

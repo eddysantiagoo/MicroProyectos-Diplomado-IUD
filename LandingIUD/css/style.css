@@ -158,3 +158,33 @@ a {
   height: auto;
   padding-left: 10px;
 }
+
+/* Media querys*/
+
+@media all and (max-width: 768px){
+  .nav{
+    width: 100%;
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .nav2 ul li{
+    margin-right: 0;
+  }
+
+  .articles{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+    width: 100%;
+    -ms-scrollbar-highlight-color: 0 auto;
+    padding: 10px;
+  }
+  
+}
