@@ -13,7 +13,7 @@ let show = true;
 buttonMenu.addEventListener('click', () => {
     show = !show;
     if(show){
-        list.style.display = 'block'
+        list.style.display = 'flex'
     }else{
         list.style.display = 'none'
     }
@@ -23,6 +23,7 @@ window.addEventListener('resize', () => {
     const width = screen.width
     if(width >= 425.999){
         list.style.display = 'flex'
+        list.style.justifyContent = 'center'
     }else{
         list.style.display = 'none'
         show = false
