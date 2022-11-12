@@ -8,33 +8,15 @@ foot.innerHTML = year
 const buttonMenu = document.getElementById('btn-menu')
 const list = document.getElementById('nav-items')
 
-let show = true;
+list.style.display = 'none'
+
+let show = false;
 
 buttonMenu.addEventListener('click', () => {
     show = !show;
     if(show){
-        list.style.display = 'flex'
-    }else{
         list.style.display = 'none'
+    }else{
+        list.style.display = 'flex'
     }
 })
-
-window.addEventListener('resize', () => {
-    const width = screen.width
-    if(width >= 425.999){
-        list.style.display = 'flex'
-        list.style.justifyContent = 'center'
-    }else{
-        list.style.display = 'none'
-        show = false
-    }
-})
-
-(function(){
-    const width = screen.width
-    if(width >= 425.999){
-        list.style.display = 'flex'
-    }else{
-        list.style.display = 'none'
-    }
-})();

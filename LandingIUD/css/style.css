@@ -75,6 +75,7 @@ a {
 }
 
 .nav2 a:hover{
+  font-size: 18px;
   color: orange;
 }
 
