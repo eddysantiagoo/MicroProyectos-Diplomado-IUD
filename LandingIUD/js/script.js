@@ -1,36 +1,39 @@
-const foot = document.getElemntById('year');
+const foot = document.getElementById('year');
 
 const year = new Date().getFullYear();
 
-foot.innerHTML = year;
+foot.innerHTML = year
 
-const buttonMenu = document.getElemntById('btn-menu')
+// MENU
+const buttonMenu = document.getElementById('btn-menu')
 const list = document.getElementById('nav-items')
 
-buttonMenu.addEventListener('click', () =>{
+let show = true;
+
+buttonMenu.addEventListener('click', () => {
     show = !show;
-    if (show) {
+    if(show){
         list.style.display = 'block'
     }else{
         list.style.display = 'none'
     }
 })
 
-window.addEventListener('resize', () =>{
-    const width = screen.width;
-
-    if (width >= 425.999) {
+window.addEventListener('resize', () => {
+    const width = screen.width
+    if(width >= 425.999){
         list.style.display = 'flex'
     }else{
-        list.style = 'none'
-        show = false;
+        list.style.display = 'none'
+        show = false
     }
 })
 
 (function(){
-    if (width >= 425.999) {
+    const width = screen.width
+    if(width >= 425.999){
         list.style.display = 'flex'
     }else{
-        list.style = 'none'
+        list.style.display = 'none'
     }
 })();

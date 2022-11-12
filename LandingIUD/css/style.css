@@ -233,7 +233,7 @@ nav ul li:hover{
 @media all and (max-width: 425.999px){
   
   .menu{
-      align-items: left;
+      align-items: center;
   }
 
   .logo{
@@ -247,7 +247,7 @@ nav ul li:hover{
 
   .nav{
       width: 100%;
-      margin: auto;
+      margin-top: auto;
   }
 
   .nav2 ul{
@@ -255,7 +255,6 @@ nav ul li:hover{
       flex-direction: row;
       flex-wrap: wrap;
       margin: 0;
-      text-align: center;
   }
 
   .nav a{
