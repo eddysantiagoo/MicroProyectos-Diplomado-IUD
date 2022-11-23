@@ -32,6 +32,16 @@ a {
   color: #ffff;
 }
 
+.fa-brands{
+  text-decoration: none;
+  color: white;
+}
+
+.fa-facebook:hover{
+  color: #9dba4c;
+  transition: color .5s;
+}
+
 .nav1{
   padding: 10px;
 
@@ -51,15 +61,15 @@ a {
 .menu {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
 }
 
 .logo{
-
+  
 }
 
 .logo img{
   width: 80%;
+  padding-top: 12%;
 }
 
 .nav2 ul{
@@ -70,12 +80,13 @@ a {
 .nav2 a{
   color: #013d59;
   font-weight: bold;
+  font-size: 16px;
   line-weight: 20;
-  transition: color .5s;
+  transition: color .3s, font-size .10s;
 }
 
 .nav2 a:hover{
-  font-size: 18px;
+  font-size: 17px;
   color: orange;
 }
 
@@ -122,6 +133,7 @@ a {
 }
 
 .article{
+  margin-top: 25px;
   border-radius: 15px;
 }
 
@@ -147,6 +159,7 @@ a {
   opacity: 0.9;
   transition: opacity 2s ease-in-out;
   transition: transform 2s;
+  margin-bottom: 25px;
 }
 
 .article img:hover{
@@ -160,10 +173,11 @@ a {
 
 .footer {
   grid-area: footer;
-  background: rgb(0, 71, 204);
+  background: orangered;
 }
 
 .foot{
+  margin: 15px;
   color: #fff;
   text-align: center;
   height: auto;
@@ -268,8 +282,6 @@ nav ul li:hover{
       flex-direction: row;
       flex-wrap: wrap;
       margin: 0;
-      justify-content: center;
-      margin-left: 75%;
   }
 
   .nav a{
@@ -280,7 +292,7 @@ nav ul li:hover{
   .slider{
       width: 100%;
       height: 50px;
-      padding-top: 200px;
+      padding-top: 180px;
   }
 
   .articles{
@@ -300,9 +312,16 @@ nav ul li:hover{
   }
 
   nav ul{
-
+    padding: 10px;
   }
-
+  
+  nav ul li{
+    padding: 0.5rem;
+  }
+  
+  nav ul li:hover{
+    padding: 0.5rem;
+  }
   #btn-menu{
       display: block;
       background: transparent;
