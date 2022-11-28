@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use Illuminate\Http\Request;
 use App\Models\Post;
 
@@ -17,9 +18,10 @@ class PostsController extends Controller
 
         $post = new Post;
         $post->title = $request->title;
+        $post->categoria_id = $request->categoria_id;
         $post->save();
 
-        return redirect()->route('posts')->with('success', 'Post creado correctamente');
+        return redirect()->route('posts')->with('success', 'Post creado correctamente 🐢');
     }
 
     // Clase para mostrar todos los posts
@@ -27,7 +29,8 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('posts.index', ['posts' => $posts]);
+        $categorias = Categoria::all();
+        return view('posts.index', ['posts' => $posts, 'categorias' => $categorias]);
     }
 
     // Clase para editartodos los posts
@@ -47,7 +50,7 @@ class PostsController extends Controller
         $post->save();
 
         // dd($request); debuging
-        return redirect()->route('posts')->with('success', 'Post actualizado!');
+        return redirect()->route('posts')->with('success', 'Post actualizado!🐢');
     }
 
      // Clase para eliminar los posts
@@ -55,6 +58,6 @@ class PostsController extends Controller
     {
         $post = Post::find($id);
         $post->delete();
-        return redirect()->route('posts')->with('success', 'Post eliminado!');
+        return redirect()->route('posts')->with('success', 'Post eliminado!🐢');
     }
 }

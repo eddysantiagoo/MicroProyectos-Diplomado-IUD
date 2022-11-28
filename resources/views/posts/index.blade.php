@@ -15,9 +15,18 @@
 
     <!-- Componente de registro del post -->
     <div class="mb-3">
-      <label for="title" class="form-label">Titulo del post</label>
-      <input type="text" name="title" class="form-control" >
+      <label for="title" class="form-label">Titulo del post 🐳</label>
+      <input type="text" name="title" class="form-control">
     </div>
+
+    <label for="categoria_id" class="form-label">Categoria del post</label>
+    <select name="categoria_id" class="form-select">
+      @foreach ($categorias as $categoria )
+      <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+      @endforeach
+    </select>
+
+
     <button type="submit" class="btn btn-primary">Registrar posts</button>
   </form>
 
@@ -26,7 +35,7 @@
     <div class="row py-1">
       <div class="col-md-9 d-flex align-items-center">
         <a href="{{ route('posts-edit', ['id' => $post->id]) }}">{{ $post-> title}}</a>
-        
+
       </div>
 
       <div class="col-md-3 d-flex justify-content-and">
