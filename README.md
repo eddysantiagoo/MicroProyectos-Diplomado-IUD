@@ -29,7 +29,7 @@
 
 1. Clonar el repositorio
    ```sh
-   git clone https://github.com/eddysantiagoo/MicroProyectos-Diplomado-IUD/tree/laravel
+   git clone -b laravel https://github.com/eddysantiagoo/MicroProyectos-Diplomado-IUD.git
    ```
 2. Instalar las dependencias del composer
    ```sh
